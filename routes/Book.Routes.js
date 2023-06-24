@@ -93,5 +93,11 @@ bookRouter.delete("/delete/:id", async (req, res) => {
 });
 
 
+bookRouter.get("/get/id",async(req,res)=>{
+
+  const book=await BookModel.find()
+  res.send(book)
+})
+
 
 module.exports = { bookRouter };
