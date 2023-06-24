@@ -28,6 +28,9 @@ bookRouter.get("/get", async (req, res) => {
       query.rating = { $in: rating };
     }
   
+    if (genre) {
+      query.genre = { $in: genre };
+    }
    
     const sort = {};
 

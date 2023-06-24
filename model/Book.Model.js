@@ -8,6 +8,8 @@ const bookSchema= mongoose.Schema({
     author:String,
     rating:Number,
     description:String,
+    genre:String,
+    year:Number,
     booknow:{
         type:Boolean,
         default:false
