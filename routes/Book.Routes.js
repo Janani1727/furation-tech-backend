@@ -8,7 +8,7 @@ const { BookModel } = require("../model/Book.Model");
 bookRouter.get("/get", async (req, res) => {
     let total = [];
   
-    const { name, author, sortBy, rating, price, page, limit } = req.query;
+    const { name, author, sortBy, rating, price, page, limit,genre } = req.query;
   
     const query = {};
   
